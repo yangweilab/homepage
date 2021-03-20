@@ -227,7 +227,9 @@ p.ans{
     overflow: hidden;
     
 }
-
+.news-image img{
+    height: 100%;
+}
 
 /* publication.html */
 aside#result-aside{
