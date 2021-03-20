@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>YangWei LAB</title>
+    <script>
+        function showMoreBar() {
+            document.getElementById('more-bar').style.display = 'flex'
+        }
+        function hideMoreBar() {
+            document.getElementById('more-bar').style.display = 'none'
+        }
+    </script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fa/css/all.css">
+</head>
+
+<body>
+    <header>
+        <div id="lab-title">
+            <p>千葉大学</p>
+            <p>楊偉研究室</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <a href="index.html">
+                <li>ホーム</li>
+            </a>
+            <a href="news.html">
+                <li>お知らせ</li>
+            </a>
+            <a href="research.html">
+                <li>研究内容</li>
+            </a>
+            <a href="publication.html">
+                <li>研究業績</li>
+            </a>
+            <a href="funding.html">
+                <li>研究資金</li>
+            </a>
+            <a id="more" href="javascript:;" onclick="" onmouseover="showMoreBar()">
+                <li>More</li>
+            </a>
+
+
+        </ul>
+        <div id="more-bar" onmouseover="showMoreBar()" onmouseout="hideMoreBar()">
+            <ul>
+                <a href="teaching.html">
+                    <li>Teaching</li>
+                </a>
+                <a href="link.html">
+                    <li>リンク</li>
+                </a>
+                <a href="member.html">
+                    <li>メンバー</li>
+                </a>
+                <a href="guide.html">
+                    <li>案内</li>
+                </a>
+            </ul>
+        </div>
+
+
+    </nav>
+
+    <div class="outer-wrap">
+        <div class="change-lang">
+            <a style="color: grey;" href="research.html">日本語</a>
+            <span>/</span>
+            <a href="research-e.html">English</a>
+        </div>
+    </div>
+
+
+    <article class="clearfix">
+        <p class="question">
+            1. どのような研究をしているか?
+        </p>
+        ​<p class="ans">
+            私の研究は陸域生態系における定量的衛星リモートセンシング及びその応用である。今まで取り組んできたのは、衛星リモートセンシングとGISを用いた植生・湖沼の環境変化のモニタリングに関する研究であり、三つのキーワード、すなわち、フィールドワーク・リモートセンシング・モデリングに集約できる。例えば、衛星データおよび生態系プロセスモデルを用いて、北方林の林床植生指数・葉面積指数や湖沼・河川の水質（クロロフィルa濃度或いは懸濁物質濃度など）、土地被覆・利用の変化によるランドスケープの変化などの推定・モニタリングに関する研究を行ってきた。開発したモニタリング手法を検証する為に、様々な研究対象地域で現場調査が必要である。
+        </p>
+
+        <p class="question">
+            2. 定量的衛星リモートセンシングとは?
+        </p>
+        
+        <p class="ans">
+            定量的衛星リモートセンシングは物理や経験的なモデルに基づき、様々な数学手法を用いて衛星観測データから地球表面における生物・化学・物理パラメータの抽出すること。例えば、CEReSが管理しているひまわり８号のデータを用いて、地表面温度が抽出できる。このような研究はグローバルスケールで自然現象のメカニズム解明に不可欠である。
+        </p>
+        
+        <p class="question">
+            3. 研究を社会の中でどのように活かすか?
+        </p>
+
+        <p id="result-0" class="ans">
+            人類と自然の関わりはとても複雑であるため、人類の活動が自然界に及ぼす影響は、「起きてみないとわからない」ことが多い。しかし、一度起きた変化はなかなか取り返しがつかない。こうした変化をモデルで予測できれば、起こりうる危機に、前もって備えることができるだろう。そのためには二つの必須なものがある。一つは、現実に近い結果をシミュレーションできるモデルである。この点に関しては、フィールドデータや実験データに基づいて対象をよく調べて、自然現象のメカニズムを解明し、起こりうる様々な条件を想定し、モデルの精度を検証することが不可欠である。もう一つは、モデルを駆動するために必要な高品質のデータセットである。現地調査で得られる情報や知見は正確だが、時間的・空間的な制約が多い。しかし、新しい空間解析技術（リモートセンシングとGIS）をフィールドサイエンスに積極的に取り入れれば、双方の成果を融合し、自然を観察する能力を飛躍的に向上させることができ、マイクロからマクロまで様々な視点から自然現象を総合的に解明することが可能となる。こうすると、より現実に近い予測ができるだろう。この予測結果を指針として、有限な地球資源をより計画的・合理的に利用し、人類社会の発展を持続可能にするための方策を導き出したい。
+        </p>
+    </article>
+    
+
+
+    <footer>
+        <a target="blank" href="https://www.chiba-u.ac.jp/index.html">
+            <img id='chiba-u' src="https://www.chiba-u.ac.jp/common/images/header/logo.png" alt="Chiba University">
+        </a>
+        <a id="ceres-word" target="blank" href="https://ceres.chiba-u.jp/">
+            CEReS
+        </a>
+        <a id='yangweilab' title="send e-mai to YangWei Lab" href="mailto:yangwei@chiba-u.jp">
+            <span class="fas fa-envelope"></span>
+            <span>楊偉研究室</span>
+        </a>
+        <!-- <img id='ceres' src="https://ceres.chiba-u.jp/wp/wp-content/uploads/2020/11/title01.png" alt=""> -->
+    </footer>
+</body>
+
+</html>

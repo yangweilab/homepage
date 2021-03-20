@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>YangWei LAB</title>
+    <script>
+        function showMoreBar() {
+            document.getElementById('more-bar').style.display = 'flex'
+        }
+        function hideMoreBar() {
+            document.getElementById('more-bar').style.display = 'none'
+        }
+    </script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fa/css/all.css">
+</head>
+
+<body>
+    <header>
+        <div id="lab-title">
+            <p>Chiba University</p>
+            <p>YangWei-Lab</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <a href="index-e.html">
+                <li>HOME</li>
+            </a>
+            <a href="news-e.html">
+                <li>NEWS</li>
+            </a>
+            <a href="research-e.html">
+                <li>Research</li>
+            </a>
+            <a href="publication-e.html">
+                <li>Publication</li>
+            </a>
+            <a href="funding-e.html">
+                <li>Funding</li>
+            </a>
+            <a id="more" href="javascript:;" onclick="" onmouseover="showMoreBar()">
+                <li>More</li>
+            </a>
+
+
+        </ul>
+        <div id="more-bar" onmouseover="showMoreBar()" onmouseout="hideMoreBar()">
+            <ul>
+                <a href="teaching-e.html">
+                    <li>Teaching</li>
+                </a>
+                <a href="link-e.html">
+                    <li>Link</li>
+                </a>
+                <a href="member-e.html">
+                    <li>Member</li>
+                </a>
+                <a href="guide-e.html">
+                    <li>Guide</li>
+                </a>
+            </ul>
+        </div>
+
+
+    </nav>
+
+    <div class="outer-wrap">
+        <div class="change-lang">
+            <a href="guide.html">日本語</a>
+            <span>/</span>
+            <a style="color: grey;" href="guide-e.html">English</a>
+        </div>
+    </div>
+
+
+    <div class="outer-wrap clearfix">
+        <iframe id='google-map'
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1621.5646311793014!2d140.10528616018047!3d35.62453974012872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6022849c569fafed%3A0xddb82e0c2f976075!2z5Y2D6JGJ5aSn5a2mIOW3peWtpuezu-e3j-WQiOeglOeptuajnzE!5e0!3m2!1szh-CN!2sjp!4v1615096460122!5m2!1szh-CN!2sjp"
+            width="500" height="450" style="border:1px solid black;" allowfullscreen="" loading="lazy"></iframe>
+        <div id="yangweilab-guid">
+            <p>YangWei Lab</h1>
+            <p>Engineering Research Building 8F</p>
+            <p>Chiba University</p>
+            <p>1-33 Yayoichō Inage Ward</p>
+            <p>Chiba, Chiba Ken, Japan</p>
+            <p>263-0022</p>
+            <br>
+            <p class="address-guide" style="font-style: italic;">yangwei@chiba-u.jp</p>
+        </div>
+    </div>
+
+
+    <footer>
+        <a target="blank" href="https://www.chiba-u.ac.jp/index.html">
+            <img id='chiba-u' src="https://www.chiba-u.ac.jp/common/images/header/logo.png" alt="Chiba University">
+        </a>
+        <a id="ceres-word" target="blank" href="https://ceres.chiba-u.jp/">
+            CEReS
+        </a>
+        <a id='yangweilab' title="send e-mai to YangWei Lab" href="mailto:yangwei@chiba-u.jp">
+            <span class="fas fa-envelope"></span>
+            <span>楊偉研究室</span>
+        </a>
+        <!-- <img id='ceres' src="https://ceres.chiba-u.jp/wp/wp-content/uploads/2020/11/title01.png" alt=""> -->
+    </footer>
+</body>
+
+</html>

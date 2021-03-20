@@ -1,0 +1,395 @@
+header,article,nav,footer{
+    width: 100%;
+    margin: 0 auto;
+    
+}
+
+div.outer-wrap{
+    display: flex;
+    width: 100%;
+    margin:30px auto;
+    flex-wrap: wrap;
+    justify-content:center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+header{
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+    background-image: url(../img/homepage_fuji1.jpg);
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#lab-title{
+    width: 200px;
+    text-align-last: justify;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 200%;
+    margin: 50px 3%;
+}
+#lab-title p{
+    margin-bottom: 20px;
+}
+/* nav bar */
+nav{
+    height: 80px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: black;
+    display: flex;
+    text-align: center;
+    flex-wrap: nowrap;
+    justify-content:center;
+    
+}
+
+#more-bar{
+    height: 80px;
+    width: 100vw;
+    position: absolute;
+    top: 80px;
+    z-index: 999;
+    background-color: black;
+    display: flex;
+    text-align: center;
+    flex-wrap: nowrap;
+    justify-content:center;
+    display: none;
+    margin: 0 auto;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    float: left;
+    margin: 30px 2vw;
+    font-size: 16px;
+    
+}
+#more-bar a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    float: left;
+    margin: 30px 2vw;
+    
+}
+
+nav a:hover{
+    color: grey;
+}
+#more-bar a:hover{
+    color: grey;
+}
+
+
+
+#more-bar:hover{
+    display: flex;
+}
+nav a:active{
+    color: grey;
+}
+
+
+.change-lang{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+.change-lang a{
+    text-decoration: none;
+    color: black;
+}
+
+.change-lang a:hover{
+    color: red;
+}
+
+article{
+    width: 80%;
+    margin: 40px auto;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    vertical-align: baseline;
+}
+
+.clearfix::after,
+.clearfix::before{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* index.html */
+
+.who-are-we{
+    box-shadow: 0 0 5px black;
+    line-height: 1.5;
+    padding: 30px;
+    font-size: 20px;
+    text-align: justify;
+    margin: 50px 0.5vw; 
+}
+
+.who-are-we .study-in-e::first-letter{
+    font-size: 40px;
+}
+
+
+.background{
+    background-image: url(../img/background.jpg);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: contain;
+    /* overflow: hidden; */
+    width: 80%;
+    height: 20vw;
+    text-align: center;
+    margin: 10px auto;
+    clear: both;
+}
+/* research.html */
+p.question{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    margin: 20px 0;
+    font-weight: bold;
+}
+p.result-ans{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    margin: 50px 5%;
+    padding-bottom: 10px;
+    text-align: justify;
+    border-bottom: 1px dotted black;
+}
+p.ans{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    margin: auto 5%;
+    padding-bottom: 10px;
+    text-align: justify;
+    line-height: 1.4;
+}
+/* news */
+.outer-wrap a{
+    text-decoration: none;
+    color: black;
+}
+.news-block{
+    width: 400px;
+    /* height: 200px; */
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin: 30px 30px;
+    font-family:Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+    position: relative;
+}
+
+.news-block h1{
+    font-size: 15px;
+    color:grey;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.news-block h2{
+    font-size: 15px;
+    color:grey;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.news-content{
+    width: 240px;
+    /* word-break: break-all; */
+    word-wrap: break-word;
+}
+.news-a:hover .news-content{
+    text-decoration:underline;
+    text-decoration-thickness:inherit
+}
+.news-image{
+    height: 120px;
+    width: 120px;
+    margin-left: 20px;
+    display: flex;
+    justify-content:center;
+    overflow: hidden;
+    
+}
+
+
+/* publication.html */
+aside#result-aside{
+    color: black;
+    position: fixed;
+    bottom: 120px;
+    right: 1%;
+    z-index:10;
+    background-color: white;
+    
+}
+
+.result-aside-option{
+    color: black;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    height: 150px;
+    line-height: 50px;
+    text-decoration: none;
+    
+}
+.result-aside-option li:hover{
+    background-color: tomato;
+}
+
+
+/* guide.html */
+
+#yangweilab-guid{
+    margin-top:60px;
+    margin-left: 5vw;
+}
+#yangweilab-guid p{
+    margin-bottom: 10px;
+}
+
+/* member.html */
+
+p.memebr-level{
+    font-size: 30px;
+}
+div.member-image{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content:center;
+    overflow: hidden;
+}
+
+div.member-name{
+    width: 350px;
+    font-size: 20px;
+    margin: 100px 50px;
+}
+
+table.member-experience{
+    border-collapse:separate;
+    border-spacing: 10px 10px;
+}
+
+/* footer */
+
+footer{
+    position: relative;
+    background-color: rgba(128, 128, 128, 0.75);
+    /* height: 150px; */
+    display: flex;
+    text-align: center;
+    flex-wrap:wrap;
+    justify-content:center;
+    vertical-align: baseline;
+}
+
+#ceres-word ,#yangweilab{
+    text-decoration: none;
+    color: white;
+    position: relative;
+    bottom: -65px;
+    font-size: 30px;
+    /* padding-top: 50px */
+}
+
+#ceres-word{
+    margin-left: 3vw;
+    margin-right: 3vw;
+}
+
+
+#ceres-word:hover ,#yangweilab:hover{
+    color: #ffca7a;
+}
+footer .fa-envelope{
+    font-style: italic;
+}
+
+
+
+@media screen and (max-width:787px){
+    nav a{
+        color: white;
+        text-decoration: none;
+        display: block;
+        float: left;
+        margin: 30px 2vw;
+        font-size: 14px;
+        
+    }
+    article{
+        width: 100%;
+        margin: 40px auto;
+        font-size: 20px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .who-are-we{
+        box-shadow: 0 0 5px black;
+        line-height: 1.5;
+        padding: 30px;
+        font-size: 15px;
+        text-align: justify;
+        margin: 50px 0; 
+    }
+    .background{
+        background-image: url(../img/background.jpg);
+        background-repeat: no-repeat;
+        background-position:center;
+        background-size: contain;
+        /* overflow: hidden; */
+        width: 100%;
+        height: 35vw;
+        text-align: center;
+        margin: 10px auto;
+        clear: both;
+    }
+
+
+    div.member-name{
+        font-size: 20px;
+        text-align: center;
+        margin: 20px 50px;
+    }
+
+    table.member-experience{
+        border-collapse:separate;
+        border-spacing: 10px 10px;
+        font-size: 14px;
+    }
+    aside#result-aside{
+        width: 100%;
+        border: 1px solid red;
+        bottom: 0;
+    }
+    .result-aside-option{
+        color: black;
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
+        height: 30px;
+        line-height: 30px;
+        text-decoration: none;
+        float: left;
+        margin-left: 12%;
+    }
+    
+}

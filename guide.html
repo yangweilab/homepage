@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>YangWei LAB</title>
+    <script>
+        function showMoreBar() {
+            document.getElementById('more-bar').style.display = 'flex'
+        }
+        function hideMoreBar() {
+            document.getElementById('more-bar').style.display = 'none'
+        }
+    </script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fa/css/all.css">
+</head>
+
+<body>
+    <header>
+        <div id="lab-title">
+            <p>千葉大学</p>
+            <p>楊偉研究室</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <a href="index.html">
+                <li>ホーム</li>
+            </a>
+            <a href="news.html">
+                <li>お知らせ</li>
+            </a>
+            <a href="research.html">
+                <li>研究内容</li>
+            </a>
+            <a href="publication.html">
+                <li>研究業績</li>
+            </a>
+            <a href="funding.html">
+                <li>研究資金</li>
+            </a>
+            <a id="more" href="javascript:;" onclick="" onmouseover="showMoreBar()">
+                <li>More</li>
+            </a>
+
+
+        </ul>
+        <div id="more-bar" onmouseover="showMoreBar()" onmouseout="hideMoreBar()">
+            <ul>
+                <a href="teaching.html">
+                    <li>Teaching</li>
+                </a>
+                <a href="link.html">
+                    <li>リンク</li>
+                </a>
+                <a href="member.html">
+                    <li>メンバー</li>
+                </a>
+                <a href="guide.html">
+                    <li>案内</li>
+                </a>
+            </ul>
+        </div>
+
+
+    </nav>
+
+    <div class="outer-wrap">
+        <div class="change-lang">
+            <a style="color: grey;" href="guide.html">日本語</a>
+            <span>/</span>
+            <a href="guide-e.html">English</a>
+        </div>
+    </div>
+
+
+    <div class="outer-wrap clearfix">
+        <iframe id='google-map'
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1621.5646311793014!2d140.10528616018047!3d35.62453974012872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6022849c569fafed%3A0xddb82e0c2f976075!2z5Y2D6JGJ5aSn5a2mIOW3peWtpuezu-e3j-WQiOeglOeptuajnzE!5e0!3m2!1szh-CN!2sjp!4v1615096460122!5m2!1szh-CN!2sjp"
+            width="500" height="450" style="border:1px solid black;" allowfullscreen="" loading="lazy"></iframe>
+        <div id="yangweilab-guid">
+
+            <p>日本千葉県千葉市</p>
+            <p>稲毛区弥生町1-33</p>
+            <p>千葉大学 工学系総合研究1棟8階</p>
+            <p>楊偉研究室</p>
+            <p>263-0022</p>
+            <br>
+            <p style="font-style: italic;">yangwei@chiba-u.jp</p>
+        </div>
+    </div>
+
+
+    <footer>
+        <a target="blank" href="https://www.chiba-u.ac.jp/index.html">
+            <img id='chiba-u' src="https://www.chiba-u.ac.jp/common/images/header/logo.png" alt="Chiba University">
+        </a>
+        <a id="ceres-word" target="blank" href="https://ceres.chiba-u.jp/">
+            CEReS
+        </a>
+        <a id='yangweilab' title="send e-mai to YangWei Lab" href="mailto:yangwei@chiba-u.jp">
+            <span class="fas fa-envelope"></span>
+            <span>楊偉研究室</span>
+        </a>
+        <!-- <img id='ceres' src="https://ceres.chiba-u.jp/wp/wp-content/uploads/2020/11/title01.png" alt=""> -->
+    </footer>
+</body>
+
+</html>

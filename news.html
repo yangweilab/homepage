@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>YangWei LAB</title>
+    <script>
+        function showMoreBar() {
+            document.getElementById('more-bar').style.display = 'flex'
+        }
+        function hideMoreBar() {
+            document.getElementById('more-bar').style.display = 'none'
+        }
+    </script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fa/css/all.css">
+</head>
+
+<body>
+    <header>
+        <div id="lab-title">
+            <p>千葉大学</p>
+            <p>楊偉研究室</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <a href="index.html">
+                <li>ホーム</li>
+            </a>
+            <a href="news.html">
+                <li>お知らせ</li>
+            </a>
+            <a href="research.html">
+                <li>研究内容</li>
+            </a>
+            <a href="publication.html">
+                <li>研究業績</li>
+            </a>
+            <a href="funding.html">
+                <li>研究資金</li>
+            </a>
+            <a id="more" href="javascript:;" onclick="" onmouseover="showMoreBar()">
+                <li>More</li>
+            </a>
+
+
+        </ul>
+        <div id="more-bar" onmouseover="showMoreBar()" onmouseout="hideMoreBar()">
+            <ul>
+                <a href="teaching.html">
+                    <li>Teaching</li>
+                </a>
+                <a href="link.html">
+                    <li>リンク</li>
+                </a>
+                <a href="member.html">
+                    <li>メンバー</li>
+                </a>
+                <a href="guide.html">
+                    <li>案内</li>
+                </a>
+            </ul>
+        </div>
+
+
+    </nav>
+
+    <div class="outer-wrap">
+        <div class="change-lang">
+            <a style="color: grey;" href="news.html">日本語</a>
+            <span>/</span>
+            <a href="news-e.html">English</a>
+        </div>
+    </div>
+    <div class="outer-wrap clearfix">
+        <a target="blank" class="news-a" href="https://code.earthengine.google.com/264d71fb5fd071127734539eb239b5c4">
+            <div class="news-block">
+                <h1>GEEニュース</h1>
+                <div class="outer-wrap">
+                    <p class="news-content">GEEで地図を作成する</p>
+                    <div class="news-image">
+                        <img src="https://earthengine.google.com/static/images/earth-engine-logo.png" alt="earthengine">
+                    </div>
+                </div>
+                <h2>2020/03/12</h2>
+            </div>
+        </a>
+
+        <a target="blank" class="news-a" href="https://zipingyang0916.users.earthengine.app/view/phoneproject">
+            <div class="news-block">
+                <h1>GEEニュース</h1>
+                <div class="outer-wrap">
+                    <p class="news-content">水質モニタリングに基づくゲーム</p>
+                    <div class="news-image">
+                        <img src="https://earthengine.google.com/static/images/earth-engine-logo.png" alt="earthengine">
+                    </div>
+                </div>
+                <h2>2020/03/10</h2>
+            </div>
+        </a>
+
+    </div>
+
+    <!-- if you need to add news copy from here to start and end by seeing 'end' 
+        each time you should add two news, if you don' have two, just use '    ' to fill 
+        all the blank in the 2nd news
+
+        and make sure the newest news is on the top-left
+    -->
+    <div class="outer-wrap clearfix">
+        <a target="blank" class="news-a" href="https://zipingyang0916.users.earthengine.app/view/globalwaterwatch">
+            <div class="news-block">
+                <h1>GEEニュース</h1>
+                <div class="outer-wrap">
+                    <p class="news-content">GEEのグローバル水質監視ツールが利用可能になりました。</p>
+                    <div class="news-image">
+                        <img src="https://earthengine.google.com/static/images/earth-engine-logo.png" alt="earthengine">
+                    </div>
+                </div>
+                <h2>2020/03/09</h2>
+            </div>
+        </a>
+
+        <a target="blank" class="news-a" href="javascript:;">
+            <div class="news-block">
+                <h1>研究室ニュース</h1>
+                <div class="outer-wrap">
+                    <p class="news-content">新しい研究室のホームページはオンラインです。</p>
+                    <div class="news-image">
+                        <img src="./img/homepage_fuji1.jpg" alt="earthengine">
+                    </div>
+                </div>
+                <h2>2020/03/08</h2>
+            </div>
+        </a>
+
+    </div>
+
+    <!-- end -->
+    
+
+
+    <footer>
+        <a target="blank" href="https://www.chiba-u.ac.jp/index.html">
+            <img id='chiba-u' src="https://www.chiba-u.ac.jp/common/images/header/logo.png" alt="Chiba University">
+        </a>
+        <a id="ceres-word" target="blank" href="https://ceres.chiba-u.jp/">
+            CEReS
+        </a>
+        <a id='yangweilab' title="send e-mai to YangWei Lab" href="mailto:yangwei@chiba-u.jp">
+            <span class="fas fa-envelope"></span>
+            <span>楊偉研究室</span>
+        </a>
+        <!-- <img id='ceres' src="https://ceres.chiba-u.jp/wp/wp-content/uploads/2020/11/title01.png" alt=""> -->
+    </footer>
+</body>
+
+</html>

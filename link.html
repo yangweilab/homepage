@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>YangWei LAB</title>
+    <script>
+        function showMoreBar() {
+            document.getElementById('more-bar').style.display = 'flex'
+        }
+        function hideMoreBar() {
+            document.getElementById('more-bar').style.display = 'none'
+        }
+    </script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fa/css/all.css">
+</head>
+
+<body>
+    <header>
+        <div id="lab-title">
+            <p>千葉大学</p>
+            <p>楊偉研究室</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <a href="index.html">
+                <li>ホーム</li>
+            </a>
+            <a href="news.html">
+                <li>お知らせ</li>
+            </a>
+            <a href="research.html">
+                <li>研究内容</li>
+            </a>
+            <a href="publication.html">
+                <li>研究業績</li>
+            </a>
+            <a href="funding.html">
+                <li>研究資金</li>
+            </a>
+            <a id="more" href="javascript:;" onclick="" onmouseover="showMoreBar()">
+                <li>More</li>
+            </a>
+
+
+        </ul>
+        <div id="more-bar" onmouseover="showMoreBar()" onmouseout="hideMoreBar()">
+            <ul>
+                <a href="teaching.html">
+                    <li>Teaching</li>
+                </a>
+                <a href="link.html">
+                    <li>リンク</li>
+                </a>
+                <a href="member.html">
+                    <li>メンバー</li>
+                </a>
+                <a href="guide.html">
+                    <li>案内</li>
+                </a>
+            </ul>
+        </div>
+
+
+    </nav>
+
+    <div class="outer-wrap">
+        <div class="change-lang">
+            <a style="color: grey;" href="link.html">日本語</a>
+            <span>/</span>
+            <a href="link-e.html">English</a>
+        </div>
+    </div>
+
+
+    <div class="outer-wrap clearfix">
+        <br>
+        <br>
+        <br><br>
+        <br>
+        <p class="memebr-level">Coming Soon...</p>
+        <br>
+        <br><br>
+        <br><br>
+        <br>
+    </div>
+
+    
+
+
+    <footer>
+        <a target="blank" href="https://www.chiba-u.ac.jp/index.html">
+            <img id='chiba-u' src="https://www.chiba-u.ac.jp/common/images/header/logo.png" alt="Chiba University">
+        </a>
+        <a id="ceres-word" target="blank" href="https://ceres.chiba-u.jp/">
+            CEReS
+        </a>
+        <a id='yangweilab' title="send e-mai to YangWei Lab" href="mailto:yangwei@chiba-u.jp">
+            <span class="fas fa-envelope"></span>
+            <span>楊偉研究室</span>
+        </a>
+        <!-- <img id='ceres' src="https://ceres.chiba-u.jp/wp/wp-content/uploads/2020/11/title01.png" alt=""> -->
+    </footer>
+</body>
+
+</html>
