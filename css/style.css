@@ -370,6 +370,9 @@ footer .fa-envelope{
         width: 90%;
         border-bottom: 1px dotted black;
     }
+    .news-image{
+        margin-left: 0; 
+    }
 
     div.member-name{
         font-size: 20px;
