@@ -393,5 +393,12 @@ footer .fa-envelope{
         float: left;
         margin-left: 12%;
     }
+    #ceres-word ,#yangweilab{
+        text-decoration: none;
+        color: white;
+        position: relative;
+        bottom: -80px;
+        font-size: 15px;
+    }
     
 }
