@@ -277,7 +277,9 @@ div.member-image{
     justify-content:center;
     overflow: hidden;
 }
-
+div.member-image img{
+    height: 100%;
+}
 div.member-name{
     width: 350px;
     font-size: 20px;
