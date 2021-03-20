@@ -362,7 +362,9 @@ footer .fa-envelope{
         margin: 10px auto;
         clear: both;
     }
-
+    .news-block{
+        width: 90%;
+    }
 
     div.member-name{
         font-size: 20px;
