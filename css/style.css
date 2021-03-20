@@ -368,6 +368,7 @@ footer .fa-envelope{
     }
     .news-block{
         width: 90%;
+        border-bottom: 1px dotted black;
     }
 
     div.member-name{
